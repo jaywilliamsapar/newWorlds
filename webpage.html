@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+    <h1>LIST ITEM</h1>
+    <table id="tables">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Brand Name*</label><label class="validation-error hide" id="fullNameValidationError">
+                            Retard alert !!!</label>
+                        <input type="text" name="brandName" id="brandName">
+                    </div>
+                    <div>
+                        <label>Specification</label>
+                        <input type="text" name="speci" id="speci">
+                    </div>
+                    <div>
+                        <label>Year Model</label>
+                        <input type="text" name="yearModel" id="yearModel">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emperado">
+                    <thead>
+                        <tr>
+                            <th>Brand Name</th>
+                            <th>Specification</th>
+                            <th>Year Model</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="dog.js"></script>
+</body>
+
+</html>
